@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/background_reminder">
+
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:weightSum="1"
+      android:id="@+id/linearLayout">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_weight="0.25">
+          <TextView
+              android:id="@+id/label_amount"
+              android:layout_width="100dp"
+              android:layout_height="40dp"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:text="Amount"
+              android:textStyle="bold"
+              android:gravity="center"
+              android:layout_below="@+id/expenseButton"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="20dp"
+              android:layout_marginTop="100dp" />
+
+          <EditText
+              android:id="@+id/expenseAmount"
+              android:layout_width="100dp"
+              android:layout_height="wrap_content"
+              android:inputType="numberDecimal"
+              android:background="@drawable/frame_editview"
+              android:layout_alignTop="@+id/label_amount"
+              android:layout_centerHorizontal="true"
+              android:layout_gravity="bottom" />
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_weight="0.25">
+
+          <TextView
+              android:id="@+id/label_account"
+              android:layout_width="100dp"
+              android:layout_height="40dp"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:text="Account"
+              android:textStyle="bold"
+              android:gravity="center"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="20dp"/>
+
+
+          <Spinner
+              android:id="@+id/expenseAccountSpinner"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+            >
+          </Spinner>
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_weight="0.25">
+
+          <TextView
+              android:id="@+id/label_expensetype"
+              android:layout_width="100dp"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:text="Expense Type"
+              android:textStyle="bold"
+              android:gravity="center"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="20dp"/>
+
+          <Spinner
+              android:id="@+id/expenseTypeSpinner"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+          </Spinner>
+
+
+      </LinearLayout>
+
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_weight="0.25">
+
+          <TextView
+              android:layout_width="100dp"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:text="Description"
+              android:textStyle="bold"
+              android:gravity="center"
+              android:id="@+id/label__description"
+              android:layout_marginLeft="15dp"
+              android:layout_marginRight="20dp"/>
+
+          <EditText
+              android:id="@+id/expenseDescription"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:minWidth="100dp"
+              android:inputType="text"
+              android:background="@drawable/frame_editview"/>
+
+      </LinearLayout>
+
+
+
+  </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/cameraButton"
+        android:background="@drawable/logo_camera"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/locationButton"
+        android:layout_toStartOf="@+id/locationButton" />
+
+
+    <Button
+        android:id="@+id/locationButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/logo_gps"
+        android:layout_below="@+id/expensePhotoImageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="117dp">
+
+        <Button
+            android:id="@+id/expenseSaveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="save"
+            android:background="@drawable/frame_button3"
+            android:layout_marginRight="50dp"
+            android:layout_weight="0.5"/>
+
+        <Button
+            android:id="@+id/expenseCancelButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:background="@drawable/frame_button3"
+            android:layout_weight="0.5"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

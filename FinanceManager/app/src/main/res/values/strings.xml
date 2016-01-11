@@ -1,0 +1,71 @@
+<resources>
+
+    <string name="app_name">FinanceManager</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="accountAddButton">Add</string>
+
+    <string name="detailDateText">Date</string>
+    <string name="detailAmountText">Amount</string>
+    <string name="detailAccountText">Account</string>
+    <string name="detailDescriptionText">Description</string>
+    <string name="detailExpenseTypeText">Expense\nType</string>
+
+    <string name="editAccountText">Account Information</string>
+    <string name="editAccountUpdateButton">Update</string>
+    <string name="editAccountDeleteButton">Delete</string>
+
+    <string name="mainIncomeText">Income: $0</string>
+    <string name="mainExpenseText">Expense: $0</string>
+    <string name="mainBalanceText">Balance: $0</string>
+    <string name="addRecordButton">Add a Record</string>
+    <string name="addReminderButton">Add a Reminder</string>
+    <string name="accountButton">Account</string>
+    <string name="diagramButton">Diagram</string>
+    <string name="detailButton">Detail</string>
+    <string name="mainSaveServerButton">Save on Server</string>
+
+    <string name="expenseButton">Expense</string>
+    <string name="incomeButton">Income</string>
+    <string name="expenseEditText">Amount</string>
+    <string name="cameraButton">Camera</string>
+    <string name="expenseCancelButton">Cancel</string>
+    <string name="expenseSaveButton">Save</string>
+
+    <string name="inputUserNameText">User Name</string>
+    <string name="inputUserPasswordText">Password</string>
+    <string name="inputUserConfirmPasswordText">Confirm\nPassword</string>
+    <string name="submitRegisterButton">Submit</string>
+
+    <string name="remindWhatText">Remind What?</string>
+    <string name="remindAmountText">Remind Amount?</string>
+    <string name="remindWhenText">Remind When?</string>
+    <string name="setReminderButton">Set Reminder</string>
+
+    <string-array name="expenseType_arrays">
+        <item>Book</item>
+        <item>Rental fee</item>
+        <item>Rood</item>
+        <item>Restuarant</item>
+        <item>Cloths</item>
+        <item>Internet</item>
+        <item>Others</item>
+    </string-array>
+
+    <string-array name="payType_arrays">
+        <item>Book</item>
+        <item>Rental fee</item>
+        <item>Rood</item>
+        <item>Restuarant</item>
+        <item>Cloths</item>
+        <item>Internet</item>
+        <item>Others</item>
+    </string-array>
+
+    <string name="userNameText">User Name</string>
+    <string name="userPasswordText">User Password</string>
+    <string name="loginButton">Login</string>
+    <string name="registerText">New to the app? Register Here!</string>
+    <string name="registerButton">Register</string>
+
+</resources>

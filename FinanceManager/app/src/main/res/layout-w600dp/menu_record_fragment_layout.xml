@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/background_reminder">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/expenseMenuButton"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="250dp"
+            android:background="@drawable/minus"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/incomeMenuButton"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/plus_black"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

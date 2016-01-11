@@ -1,0 +1,118 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    android:background="@drawable/background_login"
+    android:weightSum="1">
+
+    <TableRow
+        android:layout_weight="0.2">
+        <ImageView
+            android:id="@+id/mainpage_logo"
+            android:background="@drawable/logo"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="90dp"
+            android:layout_height="fill_parent"
+            android:layout_width="300dp"
+            android:layout_gravity="center"/>
+    </TableRow>
+
+
+
+    <TableRow
+        android:layout_marginTop="20dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="120dp"
+            android:textColor="#000000"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="1dp">
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_height="wrap_content"
+            android:layout_width="320dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="0dp"
+            android:background="@drawable/frame_textview"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginLeft="120dp"
+            android:textColor="#000000"/>
+    </TableRow>
+
+    <TableRow>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_height="wrap_content"
+            android:layout_width="357dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="0dp"
+            android:inputType="textPassword"
+            android:background="@drawable/frame_textview"/>
+    </TableRow>
+
+   <TableRow
+       android:layout_marginTop="20dp"
+       android:layout_marginBottom="10dp">
+       <CheckBox
+           android:id="@+id/remember_pass"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:checked="false"
+           android:layout_marginLeft="120dp"
+           android:shadowColor="#FFFFFF"/>
+       <TextView
+           android:layout_height="wrap_content"
+           android:text="Remember password                                                         "
+           android:textStyle="bold"
+           android:textSize="18dp"
+           android:textColor="#000000" />
+
+   </TableRow>
+
+
+
+    <TableRow>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Login"
+            android:textStyle="bold"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:background="@drawable/frame_button2"
+            android:layout_marginBottom="10dp"/>
+    </TableRow>
+
+
+    <TableRow>
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_span="2"
+            android:text="register"
+            android:textStyle="bold"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="120dp"
+            android:background="@drawable/frame_button2"/>
+    </TableRow>
+
+</TableLayout>

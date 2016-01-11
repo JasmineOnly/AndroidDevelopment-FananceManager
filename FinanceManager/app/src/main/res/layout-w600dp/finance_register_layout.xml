@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_reminder">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/inputUserNameText"
+        android:textStyle="bold"
+        android:id="@+id/inputUserNameText"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="100dp"
+        android:textSize="18dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/inputUserName"
+        android:layout_alignTop="@+id/inputUserNameText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="100dp"
+        android:background="@drawable/frame_editview"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/inputUserPasswordText"
+        android:textStyle="bold"
+        android:id="@+id/inputUserPasswordText"
+        android:layout_marginTop="60dp"
+        android:textSize="18dp"
+        android:layout_below="@+id/inputUserName"
+        android:layout_alignLeft="@+id/inputUserNameText"
+        android:layout_alignStart="@+id/inputUserNameText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/inputUserConfirmPasswordText"
+        android:id="@+id/inputUserConfirmPasswordText"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/inputUserPassword"
+        android:layout_alignRight="@+id/inputUserPasswordText"
+        android:layout_alignEnd="@+id/inputUserPasswordText"
+        android:layout_marginTop="59dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/inputUserPassword"
+        android:layout_alignTop="@+id/inputUserPasswordText"
+        android:layout_alignLeft="@+id/inputUserName"
+        android:layout_alignStart="@+id/inputUserName"
+        android:background="@drawable/frame_editview"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/inputUserConfirmUserPassword"
+        android:layout_alignBottom="@+id/inputUserConfirmPasswordText"
+        android:layout_alignRight="@+id/inputUserPassword"
+        android:layout_alignEnd="@+id/inputUserPassword"
+        android:background="@drawable/frame_editview"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submitRegisterButton"
+        android:id="@+id/submitRegisterButton"
+        android:background="@drawable/frame_button3"
+        android:layout_below="@+id/inputUserConfirmUserPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="98dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Registration"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/inputUserPasswordText"
+        android:layout_toEndOf="@+id/inputUserPasswordText"
+        android:layout_marginTop="68dp"
+        android:gravity="center_horizontal"/>
+
+
+</RelativeLayout>
